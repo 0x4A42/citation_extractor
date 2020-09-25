@@ -1,0 +1,17 @@
+2020-09-17 23:46:29,445:INFO:Deleting folder for session: wZ3RAxqdxm
+2020-09-17 23:46:29,447:INFO:Server has been started.
+2020-09-17 23:46:29,461:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-09-17 23:46:32,031:INFO:New session generated: vers50u9kr
+2020-09-17 23:46:32,041:INFO:127.0.0.1 - - [17/Sep/2020 23:46:32] "[37mGET / HTTP/1.1[0m" 200 -
+2020-09-17 23:46:32,283:INFO:127.0.0.1 - - [17/Sep/2020 23:46:32] "[36mGET /static/styles/gui.css HTTP/1.1[0m" 304 -
+2020-09-17 23:46:32,388:INFO:127.0.0.1 - - [17/Sep/2020 23:46:32] "[36mGET /static/scripts/myScript.js HTTP/1.1[0m" 304 -
+2020-09-17 23:46:32,391:INFO:127.0.0.1 - - [17/Sep/2020 23:46:32] "[36mGET /static/images/file-upload-icon.png HTTP/1.1[0m" 304 -
+2020-09-17 23:46:32,590:INFO:127.0.0.1 - - [17/Sep/2020 23:46:32] "[36mGET /static/images/file-processing.png HTTP/1.1[0m" 304 -
+2020-09-17 23:46:32,698:INFO:127.0.0.1 - - [17/Sep/2020 23:46:32] "[36mGET /static/images/file-download-icon.png HTTP/1.1[0m" 304 -
+2020-09-17 23:46:32,711:INFO:127.0.0.1 - - [17/Sep/2020 23:46:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-09-17 23:46:51,813:INFO:New request from vers50u9kr
+2020-09-17 23:46:51,879:INFO:127.0.0.1 - - [17/Sep/2020 23:46:51] "[37mPOST / HTTP/1.1[0m" 200 -
+2020-09-17 23:47:03,143:INFO:New request from vers50u9kr
+2020-09-17 23:47:03,144:INFO:127.0.0.1 - - [17/Sep/2020 23:47:03] "[37mPOST / HTTP/1.1[0m" 200 -
+2020-09-17 23:47:23,653:INFO:New request from vers50u9kr
+2020-09-17 23:47:23,654:INFO:127.0.0.1 - - [17/Sep/2020 23:47:23] "[37mPOST / HTTP/1.1[0m" 200 -

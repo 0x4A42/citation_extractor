@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {% block head %} {% endblock %}
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../static/scripts/myScript.js"></script>
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <link rel="stylesheet" href="../static/styles/gui.css">
+        
+    </head>
+    <body id='mainBody'>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item " href='/'>
+                <p class='is-family-code' id='websiteName'>CitationExtractor</p>
+              </a>
+              <a role='button' class='navbar-burger ' aria-label='menu' aria-expanded='false'>
+                <span aria-hidden='true'></span>
+                <span aria-hidden='true'></span>
+                <span aria-hidden='true'></span>
+              </a>
+              </div>
+              
+          
+        
+                <div id='navbarBasicExample' class='navbar-menu' id='navBarThing'>
+                  <div class='navbar-start is-family-code' id='navigationBar'>
+               
+                {% if is_home is not defined %} 
+                {# If 'is_home' is not defined, displays normal button. 
+                Else, displays button with different coloured background #}                
+                <a class="navbar-item" href='/'>
+                {% else %}
+                <a class="navbar-item has-background-success-light" href='/'>
+                
+                {% endif %}
+
+                Home
+              </a>
+              {% if is_about is not defined %}
+               {# If 'is_github' is not defined, displays normal button. 
+                Else, displays button with different coloured background#}   
+              <a class="navbar-item" href='/about'>
+            
+              {% else %}
+              <a class="navbar-item has-background-success-light" href='/about'>
+              {% endif %}
+          
+                  About
+                </a>
+
+                {% if is_github is not defined %}
+               {# If 'is_github' is not defined, displays normal button. 
+                Else, displays button with different coloured background#}   
+              <a class="navbar-item" href='/github'>
+            
+              {% else %}
+              <a class="navbar-item has-background-success-light" href='/github'>
+              {% endif %}
+          
+                  Github
+                </a>
+          
+            </div>
+            
+            <div id='loginButtons'>
+              <a class='button is-primary' href='#'>
+                <strong>Sign up</strong>
+              </a>
+              <a class='button is-link' href='#'>
+                <strong>Log in</strong>
+              </a>
+            </div>
+          </nav>
+       {% block body %} {% endblock %}
+        <script src="" async defer></script>
+    </body>
+</html>

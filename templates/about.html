@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block head%}<title>CitationExtractor | About</title
+>{% endblock %} {% block body%}
+<div class="pageTitle">
+  <h1 class="title is-family-monospace">Under the Hood</h1>
+</div>
+
+<div
+  class="tile is-vertical is-parent coach is-family-monospace"
+  id="fileUploadTile"
+>
+  <div class="tile is-child box has-background-light">
+    <p>
+      Upon uploading of the files, your uploads are validated through checking
+      their extensions, file size, and file names to ensure that the system will
+      be able to parse them.
+    </p>
+
+    <p class='aboutText'>
+      Upon successful validation, the system then determines which loader use
+      through file extension, and then begins to extract the text from within
+      the file(s). After this, the extracted text is compared against a regex in
+      order to mine the citations.
+    </p>
+
+    <p class='aboutText'>
+      The citations are then stored in a list, of a custom object, processed as
+      Academic or Non-Academic based on a JSON of keywords, and ultimately
+      converted to a JSON and written to an output file. A bar chart showing the
+      breakdown of citations is also created, zipped with the output file, and
+      presented to you for download.
+    </p>
+  </div>
+</div>
+
+{% endblock %}

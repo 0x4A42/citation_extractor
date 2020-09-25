@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block head%}<title>CitationExtractor | Index</title>{% endblock %}
+
+{%block body%}
+
+<!-- Title of the page-->
+<div class='pageTitle'>
+  <h1 class='title is-family-monospace'>Citation Extractor</h1>
+  
+</div>
+
+<!-- description of the page-->
+<div id='pageDesc'>
+  <h4 class='subtitle is-family-monospace'>File parsing for citation extraction!*</h4>
+</div>
+
+<!-- Section of the page which will allow the user to upload their files for processing -->
+<div class="tile is-vertical is-parent coach" id='fileUploadTile'>
+  <div class="tile is-child box has-background-light">
+
+      <form action='/' method='POST' enctype="multipart/form-data">
+        <div class='drop-zone'>
+          <span class='drop-zone__prompt is-family-monospace'>Drag and drop or click here to upload files</span>
+
+          <input class="drop-zone__input" type="file" multiple name="uploaded_file" id='fileLoader'>
+
+        </div> <!-- end of drop-zone-->
+        <div class='buttons are-medium' id='fileButtons'>
+          <input type='submit' class="button is-success is-light is-outlined is-family-monospace" id='submitFiles' value='Process file(s)'>
+          </form>
+          {% if has_results is defined%}
+           <!-- If the results file exists, a variable called 'has_results' is passed through the render_template()
+          and the button to download the results zip is rendered -->
+          <form action='/' method='POST' name='download_results'> 
+          <input type='submit' class="button is-link is-light is-outlined is-family-monospace" id='download_results' name='download_results' value='Download result(s)'>
+          </form>
+          {% endif %}
+          <button class='button is-danger is-light is-outlined is-family-monospace' name='resetFiles' id='resetFiles'>Reset File(s)</button>
+        </div> <!-- end of fileButtons -->
+    </div> <!-- end of tile is-child -->
+  </div> <!-- end of tile is-vertical -->
+
+<!-- Section of the page which explains how it works-->
+<div class="tile is-vertical is-parent coach" id='howItWorks'>
+  <div class="tile is-child box has-background-light">
+
+    <div class="columns">
+      <div class="column is-one-third worksIcon"></div>
+      <div class="column is-one-third worksIcon">
+        <h5 class='title is-family-monospace' id='explanation'>How it works...</h5>
+      </div> 
+      <div class="column is-one-third worksIcon"></div>
+    </div> <!-- end of columns-->
+
+    <div class="columns">
+      <div class="column is-one-third worksIconDiv"><img src='../static/images/file-upload-icon.png' class='worksIcons'>
+      </div>
+      <div class="column is-one-third worksIconDiv"><img src='../static/images/file-processing.png' class='worksIcons'>
+      </div>
+      <div class="column is-one-third worksIconDiv"><img src='../static/images/file-download-icon.png'
+          class='worksIcons'></div>
+    </div> <!-- end of columns-->
+
+    <div class="columns is-family-monospace">
+      <div class="column is-one-third worksDescParent ">
+        <div class='worksDesc'>Your file(s) are uploaded, validated and stored on our system.</div>
+      </div>
+      <div class="column is-one-third worksDescParent">
+        <div class='worksDesc'>Your file(s) are processed, and the system attempts to extract the citations from the
+          files you uploaded.</div>
+      </div>
+      <div class="column is-one-third worksDescParent">
+        <div class='worksDesc'>Your results file is presented for download and your files are deleted from our system.
+        </div>
+      </div> <!-- end of columns-->
+    </div>
+
+  </div> <!-- end of tile child-->
+</div> <!-- end of tile parent-->
+
+<!-- Info section stylised for ipad/mobile -->
+<div class="tile is-vertical is-parent coach" id='howItWorksMobile'>
+  <div class="tile is-child box has-background-light">
+
+
+    <div class="columns">
+      <div class="column is-one-third worksIcon"></div>
+      <div class="column is-one-third worksIcon">
+        <h5 class='title is-family-monospace' id='explanation'>How it works...</h5>
+      </div> 
+      <div class="column is-one-third worksIcon"></div>
+    </div> <!-- end of columns-->
+
+    <div class="columns">
+      <div class="column is-one-third worksIcon"></div>
+      <div class="column is-one-third worksIcon">
+        <div class="column is-one-third worksIconDiv"><img src='../static/images/file-upload-icon.png' class='worksIcons'>
+      </div> 
+      <div class="column is-one-third worksIcon"></div>
+    </div> <!-- end of columns-->
+
+    <div class="columns">
+      <div class="column is-one-third worksIcon"></div>
+      <div class="column is-one-third">
+        <div class='worksDescMobile'>Your file(s) are uploaded, validated and stored on our system.</div>
+      </div>
+      </div> 
+      <div class="column is-one-third worksIcon"></div>
+    </div> <!-- end of columns-->
+
+
+    <div class="columns">
+      <div class="column is-one-third worksIcon"></div>
+      <div class="column is-one-third worksIcon">
+        <div class="column is-one-third worksIconDiv"><img src='../static/images/file-processing.png' class='worksIcons'>
+        </div>
+      </div> 
+      <div class="column is-one-third worksIcon"></div>
+    </div> <!-- end of columns-->
+
+    <div class="columns">
+      <div class="column is-one-third worksIcon"></div>
+      <div class="column is-one-third worksDescMobile">
+        <div class='worksDescMobile'>Your file(s) are processed, and the system attempts to extract the citations from the
+          files you uploaded.</div>
+      </div> 
+      <div class="column is-one-third worksIcon"></div>
+    </div> <!-- end of columns-->
+
+    <div class="columns">
+      <div class="column is-one-third worksIcon"></div>
+      <div class="column is-one-third worksIcon">
+        <div class="column is-one-third worksIconDiv"><img src='../static/images/file-download-icon.png'
+          class='worksIcons'></div>
+      </div> 
+      <div class="column is-one-third worksIcon"></div>
+    </div> <!-- end of columns-->
+
+    <div class="columns">
+      <div class="column is-one-third worksIcon"></div>
+      <div class="column is-one-third">
+        <div class='worksDescMobile'>Your results file is presented for download and your files are deleted from our system.
+        </div>
+      </div> 
+      <div class="column is-one-third worksIcon"></div>
+    </div> <!-- end of columns-->
+
+    
+</div> <!-- end of tile parent-->
+</div>
+
+
+
+<div class='is-family-monospace' id='asterisk'>
+  *Currently works on .pdf, .docx, .txt, bibtex and DBLP files which use the IEEE citation format.
+</div>
+
+{% endblock %}

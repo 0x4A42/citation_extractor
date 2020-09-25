@@ -1,0 +1,28 @@
+2020-09-17 13:57:47,114:INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-09-17 13:57:47,123:INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-09-17 13:57:47,127:INFO:Added job "check_recent_activity" to job store "default"
+2020-09-17 13:57:47,127:INFO:Added job "move_log_to_archive" to job store "default"
+2020-09-17 13:57:47,128:INFO:Scheduler started
+2020-09-17 13:57:47,162:INFO:New session generated: 9M6mIH3A5z
+2020-09-17 13:57:47,169:INFO:New session generated: y7cG69bAQ3
+2020-09-17 13:57:47,171:INFO:New session generated: p2nIIuczX4
+2020-09-17 13:57:53,825:INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-09-17 13:57:53,831:INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-09-17 13:57:53,835:INFO:Added job "check_recent_activity" to job store "default"
+2020-09-17 13:57:53,835:INFO:Added job "move_log_to_archive" to job store "default"
+2020-09-17 13:57:53,835:INFO:Scheduler started
+2020-09-17 13:57:53,844:INFO:New session generated: Jknoz8moWM
+2020-09-17 13:57:53,863:INFO:Cleaning up expired session: Jknoz8moWM
+2020-09-17 13:57:53,864:INFO:Deleting folder for session: 9M6mIH3A5z
+2020-09-17 13:57:53,864:INFO:Deleting folder for session: 9pylwGcMEw
+2020-09-17 13:57:53,865:INFO:Deleting folder for session: BwfSaRRpXY
+2020-09-17 13:57:53,866:INFO:Deleting folder for session: naXyxeOB2Z
+2020-09-17 13:57:53,867:INFO:Deleting folder for session: p2nIIuczX4
+2020-09-17 13:57:53,867:INFO:Deleting folder for session: test_clean_up_folder
+2020-09-17 13:57:53,867:INFO:Deleting folder for session: y7cG69bAQ3
+2020-09-17 13:57:58,870:INFO:New session generated: XzUgrnhorX
+2020-09-17 13:57:58,873:INFO:New session generated: ZcM6EU5yrw
+2020-09-17 13:57:58,876:INFO:New session generated: MWq8hd774a
+2020-09-17 13:57:58,878:INFO:Cleaning up expired session: MWq8hd774a
+2020-09-17 13:57:58,879:INFO:New session generated: 27CVOIcOU1
+2020-09-17 13:57:58,881:INFO:New request from 27CVOIcOU1

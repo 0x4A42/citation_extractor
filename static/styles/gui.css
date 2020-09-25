@@ -1,0 +1,160 @@
+html {
+   background-color: #9da2ab;
+}
+
+#navigationBar {
+   margin-left: 250px;
+}
+
+#loginButtons{
+   margin-top: 5px;
+   margin-right: 10px;
+}
+
+#websiteName {
+   font-weight: bold;
+   }
+   
+.pageTitle{
+   margin-top: 20px;
+   margin-left: 45%;
+}
+
+#pageDesc{
+   margin-left: 43%;
+}
+
+
+#fileUploadTile{
+   margin-left: 65px;
+   margin-right: 65px;
+}
+
+#howItWorks{
+   margin-left: 65px;
+   margin-right: 65px;
+}
+
+#explanation{
+   text-align: center;
+}
+
+.worksIcon {
+   margin-left: 20px;
+}
+
+#fileButtons{
+   float: right;
+}
+.worksIcons{
+   width: 100px;
+   height: 100px;
+}
+
+.worksIconDiv{
+   text-align: center;
+}
+
+.worksDescParent{
+   text-align: center;
+}
+
+.worksDesc {
+   margin-left: 27%;
+   width: 250px;
+}
+
+#asterisk {
+   margin-left: 80px;
+}
+
+/*
+Drag and drop functionality
+*/
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+  display: none;
+}
+
+.drop-zone{
+   font-family: sans-serif;
+   font-size: 2.5em;
+   border: 2px dashed #ccc;
+   color: #ccc;
+   line-height: 300px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 10px;
+}
+
+.drop-zone__over {
+   border-color: black;
+   color: black;
+}
+
+.drop-zone__has_files {
+   border-color: green;
+   color: green;
+}
+
+.drop-zone__input{
+   display: none;
+}
+
+#repos{
+   margin-top: 20px;
+}
+
+.aboutText{
+   margin-top: 10px;
+}
+
+#howItWorksMobile {
+   display: none;
+}
+/*
+Adjusts the margin of title/subtitle divs for ipad and lower size.
+*/
+@media only screen and (max-width: 1025px){
+   .pageTitle{
+      margin-left: 30%;
+   }
+
+   #pageDesc {
+      margin-left: 25%;
+   }
+   
+   #howItWorksMobile {
+      display:flex;
+      margin-left: 65px;
+      margin-right: 65px;
+   }
+
+   .worksDescMobile{
+      text-align: center;
+   }
+
+   #howItWorks{
+      display: none;
+   }
+}
+
+/*
+Adjusts the margin of the login/sign up buttons when the burger bar is active
+*/
+@media only screen and (max-width: 1021px){
+   
+   #loginButtons{
+      margin-left: 75%;
+   }
+
+}
+
+@media only screen and (max-width: 770px) {
+   #fileButtons{
+      float: none;
+   }
+ }
