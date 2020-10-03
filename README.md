@@ -8,15 +8,14 @@ This web app allows a user to upload .pdf, .docx, and .txt files (or files conta
 
 The software will, ideally, be hosted on a web server soon. 
 
-A video showing off the functionality of the system, created for the purposes of university assessment, can be seen below in the mean time:
+A video showing off the functionality of the system, created for the purposes of university assessment, can be seen below in the mean time:  
 [![Demo video](https://img.youtube.com/vi/sNZslxp69iQ/0.jpg)](https://www.youtube.com/watch?v=sNZslxp69iQ "Project demo")
-
-
-00:00 - System start up
-01:15 - Showing of UI
-02:12 - Show of system processing files and results file
-04:52 - Showing file validation
-07:23 - Routine system processes (session/file management)
+  
+00:00 - System start up  
+01:15 - Showing of UI  
+02:12 - Show of system processing files and results file  
+04:52 - Showing file validation  
+07:23 - Routine system processes (session/file management)  
 
 # Future Development
 
